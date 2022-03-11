@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color:#F4F1DE;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-app {
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: #81B29A;
+  box-shadow: 0 0 .4rem .1rem rgb(116, 116, 116);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3D405B;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem 0 0 .5rem;
+  outline: none;
+  font-size: 2rem;
+}
+
+.todo-button {
+  border: none;
+  padding: .4rem .8rem;
+  border-radius: 0 .5rem .5rem 0;
+  color: #81B29A;
+  font-size: 3rem;
+  background-color: #3D405B;
+  cursor: pointer;
+}
+
+.todo-edit {
+  border: none;
+  padding: .4rem .8rem;
+  border-radius: 0 .5rem .5rem 0;
+  color: #81B29A;
+  font-size: 2.6rem;
+  background-color: #3D405B;
+  cursor: pointer;
+}
+
+.todo-row {
+  margin: 1rem 0;
+  padding: 1rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #709784;
+  border-radius: .5rem;
+  color:white;
+}
+
+.todo-text {
+  font-size: 2rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+}
+
+.icons {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: ; */
+}
+
+.icons svg {
+  margin: 0 .2rem;
+}
+
+.delete-icon {
+  color: rgb(196, 25, 25);
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: rgb(24, 94, 44);
+  cursor: pointer;
 }
